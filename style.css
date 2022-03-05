@@ -1,0 +1,1476 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap');
+
+
+*{
+    margin: 0px;
+}
+
+._container{
+max-width: 1480px;
+margin: 0 auto;
+overflow: hidden;
+}
+._wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width:1920px;
+    padding: 0px 15px;
+}
+/* HEADER */
+.header{
+    width:100%;
+    background:white;
+}
+.header__conteiner{
+    display: flex;
+    justify-content:space-between;
+    min-height: 78px;
+    align-items:center;
+}
+.header__logo{
+    padding-top: 20px;
+}
+.header_logo-link{
+    /* width: 100%; */
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 15px;
+    
+}
+.nav__search{
+    background:white;
+    padding-left: 15px;
+}
+.nav__login{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    background:white;
+    border-radius:7px;
+    text-decoration: none;
+    margin-left:20px;
+    box-shadow: 0px 5px 10px rgba(255, 174, 0, 0.26), 0px 20px 40px rgba(255, 174, 0, 0.29);
+}
+.nav__login__img{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    margin: 0 7px;
+    height: 18px;
+    
+}
+.nav__login__text2{
+    padding-top: 15px;
+    padding-right: 25px;
+    font-weight:bold;
+    color: #FFB20E;
+    font-size: 18px;
+}
+.nav__search{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 15px;
+}
+.nav__search__img{
+    padding-left: 8px;
+    margin-right: 5px;
+    height: 18px;
+}
+.nav__login__text1{
+   
+    font-weight:bold;
+    color:#424242;
+    font-size:18px;
+}
+
+/* /HEADER */
+/*STARVING*/
+.starving{
+    /* width: 100%; */
+    background:#FFB30E;
+    /* height: 696px; */
+    
+}
+.starving__container{
+    display: flex;
+    justify-content: space-between;
+    background:#FFB30E;
+    /* height: 696px; */
+    margin: 0 auto;
+}
+.image_base_starving{
+    width: 100%;
+    max-width: 600px;
+    align-self: flex-end;
+}
+.starving__container_ask{
+    padding-top: 132px;
+    padding-left: 20px;
+    /* width: 57%; */
+    /* height: 355px; */
+    padding-bottom: 132px;
+    /* width: 50%; */
+}
+.starving__container_ask_h1{
+    color:white;
+    font-size: 88px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:700;
+    padding-bottom: 15px;
+}
+.starving__container_ask_h3{
+    color:#504F4F;
+    font-size: 22px;
+    font-weight: 400;
+    /* margin-bottom: 20px; */
+    padding-bottom: 30px;
+}
+/* ФОРМА */
+.form{
+    background:white;
+    border-radius:8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 32px;
+}
+.form_two_button{
+    display: flex;
+    border-bottom: 1px solid #4b49494f;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+/* две кнопки радио */
+/* 1кнопка - радио */
+.radio1{
+    display: none;
+}
+.radio_but1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background:white;
+    border-radius:8px;
+}
+.radio1:checked + .radio_but1{
+background:rgba(241, 114, 40, 0.1);  
+}
+.choose1_moto{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+}
+.radio_but_text1{
+    padding-right: 24px;
+    padding-top: 7px;
+    font-weight: bold;
+    color:#F17228;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* /1кнопка - радио */
+/* 2кнопка - радио */
+
+.radio2{
+    display: none;
+}
+.radio_but2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 38px;
+    background:white;
+    border-radius:8px;
+}
+.radio2:checked + .radio_but2{
+    background:rgba(241, 114, 40, 0.1);
+    }
+.choose2_bag{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+    }
+.radio_but_text2{
+        padding-right: 24px;
+        padding-top: 7px;
+        font-weight: bold;
+        color:#757575;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif
+    }
+    /* /2кнопка - радио */
+/* /две кнопки радио */
+.buttom_form{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.input1{
+    width: 100%;
+    height: 49px;
+    background-color:#F5F5F5;
+    border:none;
+    border-radius:8px;
+    padding: 0;
+}
+.button1{
+    margin-top:20px;
+    height: 49px;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items:center;
+    border-radius:8px;
+    border:none;
+    background:linear-gradient(#FF7A7A,#F65900); 
+    /* padding-bottom: 20px; */
+    margin-left: 10px;
+}
+.input1{
+    width: 70%;
+    margin-top:20px;
+    margin-left: 24px;
+    padding-left: 40px;
+    background:url(./img/местоположение.png) no-repeat;
+    background-position:10px 10px;
+    background-color:#F5F5F5;
+    font-size: 25px;
+}
+.loop_button1{
+    /* padding-top: 20px;
+    padding-left: 25px; */
+}
+.find_food_button1{
+    padding-left: 10px;
+    /* padding-top: 15px; */
+    /* padding-right: 25px; */
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: Source Sans Pro;
+}
+/* /STARVING-------------------------------------------------------------------------------------------------------------------- */
+/* fody-sale */
+.food_sale_conteiner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+.food_sale_conteiner_blocks_img_and_text{
+     border-radius:16px ;
+     display: flex;
+     overflow: hidden;
+    }
+    .food_sale_conteiner_blocks_img{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+    .food_sale_conteiner_blocks_text{
+        position: absolute;
+        display: flex;
+        align-self: flex-end;
+        background-color:#FFB20E;
+        border-radius:0px 32px 0px 15px;
+        z-index: 2;
+        padding-left: 18px;
+        padding-right: 30px;
+    }
+    .food_sale_conteiner_blocks_text_column_deg_and_off{
+        display: flex;
+        flex-direction: column;
+        padding-top: 7px;
+    }
+    .food_sale_conteiner_blocks_text_num{
+        font-family: Source Sans Pro;
+        color:white;
+        font-weight: bold;
+        font-size: 62px;
+    }
+    .food_sale_conteiner_blocks_text_deg{
+        font-family: Source Sans Pro;
+        color:white;
+        font-weight: normal;
+        font-size: 30px;
+    }
+    .food_sale_conteiner_blocks_text_off{
+        color:white;
+        font-weight:normal;
+        font-style: normal;
+        font-size: 25px;
+    }
+    .food_sale_conteiner_blocks_text_greys_vage{
+        display: block;
+        color:#424242;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Source Sans Pro;
+        padding-top: 32px;
+    }
+    .food_sale_conteiner_blocks_text_6_days_div{
+        display: inline-block;
+        padding-right: 16px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background:rgba(241, 114, 40, 0.2);
+    }
+    .food_sale_conteiner_blocks_text_6_days_text{
+        color:#F17228;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 120%;
+        padding-left: 10px;
+        padding-top: 7px;
+        font-family: Source Sans Pro;
+    }
+    /* _________________ */
+ 
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* How_does_it_work */
+.How_does_it_work{
+   background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+   margin-top: 81px;
+}
+.How_does_it_work_text_h2{
+    padding-top: 80px;
+    color: #F17228;
+    font-size: 43px;
+    text-align: center;
+    font-weight: 700;
+}
+.How_does_it_work_container{
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.select_location {
+    display: flex;
+    flex-direction: column;
+}
+.select_location_img_a{
+    text-align: center;
+}
+.select_location_img{
+    padding-top: 15px;
+}
+.select_location_text1{
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    text-align: center;
+    color: #434343;
+    margin-bottom: 10px;
+}
+.select_location_text2{
+    font-size: 18px;
+    text-align: center;
+    color: #9E9E9E;
+}
+/* -------------------- */
+/* -popular items---------------------------------------------------------------------------------------------------------- */
+.popular_items{
+    margin-top: 80px;
+    position: relative;
+}
+.popelar_items_text_h2{
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 112%;
+}
+.popular_items_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 88px;
+    
+}
+.popular_items_blocks{
+    z-index: 2;
+}
+
+.popular_items_img_burger{
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+}
+
+
+.popular_items_text_cheese-burger{
+    display: block;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+}
+.popular_items_text_and_img{
+    display: flex;
+    text-decoration: none;
+}
+.popular_items_text2{
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color:#FFB30E;
+    margin-left: 5px;
+}
+.popular_items_img_navigation{
+    padding-top: 5px;
+    height: 9%;
+}
+.popular_items_text_price{
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+}
+.popular_items_button{
+    margin-top: 16px;
+    width: 100%;
+    background: #F17228;
+    border-radius: 8px;
+}
+.popular_items_button_a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.popular_items_button_text1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+}
+/* ---------------------------------------------------------------------------------------------- */
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 250px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+}
+.arrow_left{
+    margin-left: 100px;
+    width: 4%;
+    height: 76%;
+    background: #FFB20E;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+.arrow_left_l{
+    font-family: Font Awesome 5 Free;
+    padding-top: 8px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 120%;
+    color: white;
+    font-size: 50px;
+}
+.arrow_rigth{
+    margin-right: 100px;
+    width: 4%;
+    height: 76%;
+    background: #FFB20E;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+.arrow_rigth_r{
+    font-family: Font Awesome 5 Free;
+    padding-top: 8px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 120%;
+    color: white;
+    font-size: 50px;
+}
+/* POPULAR-ITEMS----------------------------------------------------------------------------------------------------------- */
+.reatured_restaurants{
+    margin-top: 80px;
+}
+.reatured_restaurants_text1{
+    margin-bottom: 88px;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 112%;
+    color:#212121;
+}
+.reatured_restaurants_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reatured_restaurants_container_blocks{
+    display: flex;
+    flex-direction: column;
+    border-radius:16px;
+    overflow: hidden;
+    padding-bottom: 64px;
+}
+.reatured_restaurants_container_blocks_img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+}
+.reatured_restaurants_container_blocks_off_and_fast{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+.reatured_restaurants_container_blocks_off{
+    margin-top: 34px;
+    margin-left: 40px;
+    display: flex;
+    background:#F17228;
+    border-radius:8px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items:center;
+}
+.reatured_restaurants_container_blocks_off_text{
+    padding-left: 10px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color:white;
+}
+.reatured_restaurants_container_blocks_fast{
+    margin-top: 34px;
+    margin-left: 8px;
+    display: flex;
+    border-radius:8px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items:center;
+    background:#FFB30E;
+}
+.reatured_restaurants_container_blocks_fast_text{
+    padding-left: 10px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color:white;
+}
+.reatured_restaurants_container_blocks_icon_and_text{
+    display: flex;
+    padding-top: 24px;
+}
+.reatured_restaurants_container_blocks_text_two_span{
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+}
+.reatured_restaurants_container_blocks_text-Foodworld{
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color:#424242;
+}
+.reatured_restaurants_container_blocks_text-46{
+    display: inline-block;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 130%;
+    color:#FFB30E;
+}
+.reatured_restaurants_container_blocks_button{
+    display: flex;
+    margin-top: 32px;
+    width: 55%;
+    background-color:rgba(241, 114, 40, 0.2);
+    border-radius:16px;
+    text-decoration: none;
+}
+.reatured_restaurants_container_blocks_button_text{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color: #F17228;
+    padding: 8px 16px;
+}
+.reatured_restaurants_container_blocks_button_opens{
+    display: flex;
+    margin-top: 32px;
+    width: 37%;
+    background-color:rgba(121, 185, 60, 0.2);;
+    border-radius:16px;
+    text-decoration: none;
+}
+.reatured_restaurants_container_blocks_button_text_opens{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color: #79B93C;
+    padding: 8px 16px;
+}
+/* SEARCH BY FOOD -------------------------------------------------------------------------------------- */
+.Search_by_Food{
+margin-top: 80px;
+background:#FEFAF1;
+}
+.Search_by_Food_text_and_nav{
+    padding-top: 82px;
+    display: flex;
+    justify-content: space-between;
+}
+.Search_by_Food_text{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 112%;
+}
+
+.Search_by_Food_2nav{
+    display: flex;
+    justify-content: end;
+}
+.Search_by_Food_nav_left{
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    background: #FFB30E;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+.Search_by_Food_nav_right{
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    background: #FFB30E;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+.Search_by_Food_nav_left1{
+    padding-top: 5px;
+    padding-right: 5px;
+    color:white;
+    font-size: 50px; 
+    text-align: center; 
+}
+.Search_by_Food_nav_right2{ 
+    padding-top: 5px;
+    padding-left: 5px;
+    color:white;
+    font-size: 50px; 
+    text-align: center; 
+}
+.Search_by_Food_nav_view-all{
+    font-size: 16px;
+    color:#FFB30E;
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+.Search_by_Food_menu{
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    /* ---------------------------------------------------------MEDIA---------------------------------------------------------- */
+/* @media (max-width:768px) {
+    .food_sale_conteiner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Search_by_Food_text_and_nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Search_by_Food_menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .popular_items_container{
+        justify-content: center;
+        align-items: center;
+    }
+    .popular_items_blocks{
+        margin-bottom: 20px;
+    }
+    .reatured_restaurants_container_blocks{
+        margin: 0 auto;
+    }
+    .reatured_restaurants_container_blocks_icon_and_text{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .reatured_restaurants_container_blocks_button{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .reatured_restaurants_container_blocks_button_opens{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+} */
+    /* ---------------------------------------------------------/MEDIA---------------------------------------------------------- */
+
+
+.Search_by_Food_menu_list{
+    text-align:center;
+    padding-bottom: 55px;
+    text-decoration: none;
+}
+.Search_by_Food_menu_img{
+    border-radius:144px;
+    width: 100%;
+    height: auto;
+}
+.Search_by_Food_menu_text{
+    padding-top: 26px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color:#424242;
+}
+/* ------------------------------------------------INSTAL THE APP--------------------------------------------------------------------------- */
+.install_the_app {
+    background:url(img/градиент.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.install_the_app_daily{
+    max-width: 1230px;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 130px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    border-radius: 46px;
+}
+.install_the_app_daily_block{
+    display: flex;
+    align-items: center;
+}
+.install_the_app_daily_block_with_text{
+  padding-left: 30px;
+}
+.install_the_app_daily_block_with_text_daily-discounts{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 120%;
+    background: linear-gradient(50deg, #fb3c00, #ffb800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+._border-install_the_app_daily_block2{
+    border-right: 1px solid #CFCFCF;
+    border-left: 1px solid #CFCFCF;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.install_the_app_phone{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1230px;
+    margin: 88px auto 0 auto;
+}
+.twophone{
+padding-top: 60px;
+}
+
+
+
+.install_the_app_text{
+    padding-top:120px;
+    padding-bottom: 263px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.install_the_app_text_two_botton{
+    display: flex;
+    padding-top: 40px;
+}
+.install_the_app_text_two_botton1{
+display: flex;
+background: white;
+align-items: center;
+border-radius: 5px;
+text-decoration: none;
+}
+.logo-google-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    }
+.logo-google{
+        height: 38px;
+        padding-left: 15px;
+}   
+.logo-google-text-get_in_on{
+    color:#616161;
+}
+.logo-google-text-google_play{
+    color:#212121;
+    font-size: 25px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.install_the_app_text_two_botton2{
+display: flex;
+background: white;
+margin-left: 8px;
+align-items: center;
+border-radius: 5px;
+text-decoration: none;
+}
+.logo-apple-text{
+display: flex;
+flex-direction: column;
+padding-left: 15px;
+}
+
+.logo-apple{
+    height: 32px;
+    padding-left: 15px;
+}
+.logo-apple-text-download{
+    color:#616161;
+}
+.logo-apple-text-app{
+    color:#212121;
+    font-size: 25px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+.install_the_app_text_install_text1{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 106%;
+    color:#FFB30E;
+}
+.install_the_app_text_install_text2{
+    padding-top: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #827E7E;
+}
+/* ---------------------------------------------------MEDIA----------------------------------------------------------------- */
+/* @media(max-width:1024px){
+    ._border-install_the_app_daily_block2{
+        border: none;
+        padding: 0;
+        margin-right: 40px;
+    }
+    .install_the_app_phone{
+        flex-direction: column;
+    }
+    .install_the_app_text{
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .twophone{
+        display: none;
+    }
+} */
+
+/* ---------------------------------------------------MEDIA----------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+.news_container{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 14px 15px rgba(124, 124, 124, 0.06)) drop-shadow(0px 27px 82px rgba(124, 124, 124, 0.28));
+}
+.news_container_block1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    border-radius:20px;
+    background:white;
+    overflow: hidden;
+}
+.news_container_block1_text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-left: 55px;
+   padding-right: 55px;
+   padding-bottom: 55px;
+}
+.news_container_block1_text_main-text{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 112%;
+    color:#FFB30E;
+    padding-top: 60px;
+    
+}
+.news_container_block1_text_start{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 112%;
+    color:#353535;
+}
+.news_container_block1_text_description{
+    padding-bottom: 100px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color:rgba(97, 97, 97, 0.69);
+}
+.news_container_block1_text_bottom{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    text-decoration: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-radius: 8px;
+}
+.news_container_block1_text_bottom_text{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    color:white;
+    
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+.Are_you_ready{
+    background: url(./img/are_you_ready_order_with.png);
+    margin-top: 80px;
+    padding-bottom: 75px;
+}
+.are_you_ready_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.are_you_ready_text{
+    padding-top: 90px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 97.5%;
+    color: white;
+}
+.are_you_ready_bottom{
+    display: flex;
+    margin-top: 60px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.are_you_ready_bottom_text{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    color: white;
+    
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.fotter{
+    background: #212121;
+}
+.fotter_container_block1{
+    padding-top: 100px;
+    border-bottom: 2px solid #424242;
+}
+.fotter_container_block1_h3{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.fotter_container_block1_cities{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 115px;
+
+}
+li{
+    margin-bottom: 16px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #F5F5F5;
+}
+.city1_fl{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+.fotter_container_block2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #424242;
+}
+.fotter_container_block2_text{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.fotter_container_block2_text_h3{
+    padding-bottom: 40px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color:white;
+}
+
+.fotter_container_block2_bottom{
+    display: flex;
+    flex-direction: column;
+}
+.fotter_container_block2_bottom_text-follow-us{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    color:#BBBBBB;
+}
+.fotter_container_block2_three_logo{
+    padding-top: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.fotter_container_block2_span{
+    padding-top: 45px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    color:#BBBBBB;
+}
+.footter_form{
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+    height: 60px;
+}
+.footter_form_input{
+    padding-left:60px;
+    background:url(img/envelope.png) no-repeat;
+    background-position:16px 15px;
+    background-color: #424242;
+    border-radius: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color:#ADADAD;
+}
+.footter_form_button{
+    margin-left: 16px;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    border-radius: 8px;
+    border: none;
+}
+.footter_form_span{
+    padding: 21px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    color:#FFFFFF;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:1240px){
+    .form{
+        padding: 0;
+        margin: 0 1px;
+    }
+    .starving__container{
+        flex-direction: column-reverse;
+        align-self: center;
+    }
+    .image_base_starving{
+        align-self: center;
+    }
+    .starving__container_ask{
+       padding-top: 30px;
+       align-self:center;
+       padding-left: 0;
+    }
+    .starving__container_ask_h1{
+        text-align: center;
+    }
+    .starving__container_ask_h3{
+        text-align:center;
+    }
+    .form_two_button{
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:1050px){
+    .buttom_form{
+        flex-direction: column;
+        width: 100%;
+    }
+    .button1{
+        width: 100%;
+        justify-content: center;
+        font-size: small;
+        
+    }
+    .input1{
+        width: 100%;
+        background:none;
+        padding-left: 0;
+        background-color:#F5F5F5;
+        text-align: center;
+        margin-left: 0;
+        /* margin-left: 10px; */
+        /* font-size: 14px; */
+    }
+    .starving__container_ask_h1{
+        font-size: 60px;
+        /* align-items: center;
+        align-self: center; */
+    }
+    .button1{
+        margin: 0;
+    }
+    
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:1024px) {
+    /* -----------------------------------------------HEADER---------------------------------------------------------------------------------------- */
+    .header__conteiner{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header__logo{
+        padding-left: 120px;
+    }
+    .header__nav{
+        padding-bottom: 20px;
+    }
+    /* ------------------------------------------------INSTAL THE APP--------------------------------------------------------------------------- */
+    ._border-install_the_app_daily_block2{
+        border: none;
+        padding: 0;
+        margin-right: 40px;
+    }
+    .install_the_app_phone{
+        flex-direction: column;
+    }
+    .install_the_app_text{
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .twophone{
+        display: none;
+    }
+    /* ---------------------------------------------------------NEWS_CONTAINER------------------------------------------------------------------------------------ */
+
+    .news_container_block1{
+        flex-direction: column;
+    }
+    .news_container_block1_text{
+        align-items: center;
+    }
+    .news_container_block1_text_main-text{
+        font-size: 30px;
+    }
+    .news_container_block1_text_description{
+        font-size: 18px;
+    }
+    .news_container_block1_text_start{
+        font-size: 30px;
+    }
+    .news_container_block1_text_bottom{
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    ._reverse{
+        flex-direction: column-reverse;
+    }
+
+    /* ---------------------------------------------------------ARE_YOU_READY------------------------------------------------------------------------------------ */
+
+    .Are_you_ready{
+        background: #FFB30E;
+    }
+
+    /* -----------------------------------------------------------FOOTER------------------------------------------------------------------------------- */
+    .fotter_container_block1_cities{
+        flex-wrap: wrap;
+    }
+    .city1_fl{
+        padding-bottom: 20px;
+    }
+    .fotter_container_block2{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .fotter_container_block2_text_h3{
+       margin: 10px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:830px){
+    /* --------------------------------------------------------FOOTER--------------------------------------------------------------------------------------- */
+    .fotter_container_block2_bottom{
+        flex-wrap: wrap;
+    }
+    .fotter_container_block1_h3{
+        text-align: center;
+    }
+    .fotter_container_block2_bottom_text-follow-us{
+        text-align: center;
+    }
+    .fotter_container_block2_three_logo{
+        display: flex;
+        margin: 0 auto;
+    }
+    .fotter_container_block2_span{
+        text-align: center;
+        font-size: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media(max-width:768px){
+    /* ---------------------------------------------------FOODY SALE CONTAINER----------------------------------------------------------------------------------- */
+    .food_sale_conteiner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Search_by_Food_text_and_nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Search_by_Food_menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .popular_items_container{
+        justify-content: center;
+        align-items: center;
+    }
+    .popular_items_blocks{
+        margin-bottom: 20px;
+    }
+    .reatured_restaurants_container_blocks{
+        margin: 0 auto;
+    }
+    .reatured_restaurants_container_blocks_icon_and_text{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .reatured_restaurants_container_blocks_button{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .reatured_restaurants_container_blocks_button_opens{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .arrow{
+        display: none;
+    }
+    /* ---------------------------------------------------INSTALL THE APP DAILY--------------------------------------------------------------------------------- */
+    .install_the_app_daily{
+        flex-direction: column;
+        align-items: center;
+    }
+    .install_the_app_daily_block{
+        margin-bottom: 20px;
+    }
+    .install_the_app_phone{
+        flex-direction: column;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width:530px){
+    /* ----------------------------------------------------FOOTER------------------------------------------------------------------------------------------------- */
+    .fotter_container_block1_cities{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fotter_container_block2_text{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footter_form{
+        height: 40px;
+        flex-direction: column;
+        align-items:center;
+        padding-bottom: 20px;
+    }
+    .footter_form_input{
+        padding: 0;
+        text-align: center;
+        margin-bottom: 20px;
+        background:none;
+        background-color:#424242;
+    }
+}
